@@ -58,7 +58,7 @@ AWS KMS encrypts sensitive data to protect information and support security comp
 
 ![Secure Website](images/Secure_Website.png)
 
-Note: The application is securely accessible over HTTPS using AWS Certificate Manager (ACM) with a valid TLS certificate. This ensures encrypted communication between users and the application while protecting sensitive data in transit.
+**Note:** The application is securely accessible over HTTPS using AWS Certificate Manager (ACM) with a valid TLS certificate. This ensures encrypted communication between users and the application while protecting sensitive data in transit.
 
 ---
 
@@ -101,7 +101,7 @@ Note: The application is securely accessible over HTTPS using AWS Certificate Ma
 
 ![AWS WAF Logs](images/AWS%20WAF%20BLOCK%20Logs.png)
 
-Note: AWS WAF Block Logs show that AWS WAF successfully detected and blocked suspicious or malicious web traffic before it reached the application. The logs provide visibility into blocked requests, matched security rules, source information, and threat activity for monitoring and security analysis.
+**Note:** AWS WAF Block Logs show that AWS WAF successfully detected and blocked suspicious or malicious web traffic before it reached the application. The logs provide visibility into blocked requests, matched security rules, source information, and threat activity for monitoring and security analysis.
 
 ---
 
@@ -109,7 +109,7 @@ Note: AWS WAF Block Logs show that AWS WAF successfully detected and blocked sus
 
 ![CVE-2026-33845](images/CVE-2026-33845.png)
 
-Note: AWS Security Hub detected the CVE-2026-33845 vulnerability during container image scanning. The finding provides visibility into potential security risks and helps identify vulnerabilities that require remediation to improve the overall security posture.
+**Note:** AWS Security Hub detected the CVE-2026-33845 vulnerability during container image scanning. The finding provides visibility into potential security risks and helps identify vulnerabilities that require remediation to improve the overall security posture.
 
 ---
 
@@ -117,7 +117,7 @@ Note: AWS Security Hub detected the CVE-2026-33845 vulnerability during containe
 
 ![CVE-2026-42010](images/CVE-2026-42010.png)
 
-Note: AWS Security Hub detected the CVE-2026-42010 vulnerability during container image scanning. The finding highlights potential security exposure and helps support vulnerability management, remediation, and continuous security monitoring across the AWS environment.
+**Note: **AWS Security Hub detected the CVE-2026-42010 vulnerability during container image scanning. The finding highlights potential security exposure and helps support vulnerability management, remediation, and continuous security monitoring across the AWS environment.
 
 ---
 
@@ -125,7 +125,7 @@ Note: AWS Security Hub detected the CVE-2026-42010 vulnerability during containe
 
 ![Remediation Success](images/Remediation%20Success.png)
 
-Note: The remediation process successfully resolved the identified container vulnerabilities by rebuilding and redeploying the Docker image using a secure and updated base image. This demonstrates continuous vulnerability management and improved security posture within the AWS environment.
+**Note:** The remediation process successfully resolved the identified container vulnerabilities by rebuilding and redeploying the Docker image using a secure and updated base image. This demonstrates continuous vulnerability management and improved security posture within the AWS environment.
 
 ---
 
