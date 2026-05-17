@@ -1,13 +1,25 @@
 # AWS Zero Trust Architecture
 
 ## Overview
-This project demonstrates an enterprise AWS Zero Trust Architecture using ECS Fargate, Application Load Balancer, AWS WAF, KMS encryption, GuardDuty, Security Hub, and CloudTrail.
+
+This project demonstrates an enterprise AWS Zero Trust Architecture using ECS Fargate, Application Load Balancer, AWS WAF, AWS KMS, GuardDuty, Security Hub, and CloudTrail.
+
+The architecture follows Zero Trust security principles by implementing private networking, encryption, threat detection, centralized logging, HTTPS protection, and container security within AWS.
+
+---
+
+## Architecture Diagram
+
+![AWS Zero Trust Architecture](images/Zero_trust.png)
+
+---
 
 ## AWS Services
+
 - Amazon VPC
 - ECS Fargate
 - Amazon ECR
-- Application Load Balancer
+- Application Load Balancer (ALB)
 - AWS WAF
 - AWS KMS
 - Amazon CloudWatch
@@ -16,19 +28,61 @@ This project demonstrates an enterprise AWS Zero Trust Architecture using ECS Fa
 - AWS Security Hub
 - Amazon S3
 - Amazon DynamoDB
-- AWS Certificate Manager
+- AWS Certificate Manager (ACM)
 - Route 53
 
+---
+
 ## Security Features
+
 - Private application subnets
-- HTTPS encryption
-- Web Application Firewall (WAF)
+- HTTPS/TLS encryption
+- AWS WAF web protection
 - Threat detection with GuardDuty
-- Security monitoring with Security Hub
+- Centralized monitoring with Security Hub
 - CloudTrail auditing and logging
 - AWS KMS encryption
+- Containerized workloads with ECS Fargate
+- ECR image vulnerability scanning
+
+---
+
+## Security Validation Screenshots
+
+### AWS WAF Block Logs
+
+![AWS WAF Logs](images/AWS%20WAF%20BLOCK%20Logs.png)
+
+### Security Hub Finding — CVE-2026-33845
+
+![CVE-2026-33845](images/CVE-2026-33845.png)
+
+### Security Hub Finding — CVE-2026-42010
+
+![CVE-2026-42010](images/CVE-2026-42010.png)
+
+### Remediation Success
+
+![Remediation Success](images/Remediation%20Success.png)
+
+---
+
+## Architecture Flow
+
+1. User traffic enters through the Application Load Balancer.
+2. AWS WAF filters malicious requests.
+3. HTTPS traffic is secured using AWS Certificate Manager.
+4. ECS Fargate runs containers inside private subnets.
+5. Amazon S3 securely stores application content.
+6. DynamoDB stores application data.
+7. CloudWatch and CloudTrail monitor activity and logging.
+8. GuardDuty and Security Hub provide threat detection and security findings.
+9. AWS KMS encrypts sensitive resources and logs.
+
+---
 
 ## Repository Structure
+
 ```text
 src/
 images/
@@ -38,5 +92,4 @@ README.md
 architecture.md
 deployment-guide.md
 security-controls.md
-lessons-learned.md# aws-zero-trust-architecture
-Enterprise AWS Zero Trust Architecture with ECS Fargate, WAF, KMS, GuardDuty, Security Hub, and CloudTrail.
+lessons-learned.md
