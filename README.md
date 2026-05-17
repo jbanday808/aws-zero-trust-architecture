@@ -105,7 +105,7 @@ The architecture follows Zero Trust security principles by implementing private 
 
 ![CVE-2026-42010](images/CVE-2026-42010.png)
 
-**Note: **AWS Security Hub detected the CVE-2026-42010 vulnerability during container image scanning. The finding highlights potential security exposure and helps support vulnerability management, remediation, and continuous security monitoring across the AWS environment.
+**Note:** AWS Security Hub detected the CVE-2026-42010 vulnerability during container image scanning. The finding highlights potential security exposure and helps support vulnerability management, remediation, and continuous security monitoring across the AWS environment.
 
 ---
 
