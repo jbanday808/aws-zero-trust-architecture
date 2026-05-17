@@ -18,13 +18,13 @@ The architecture follows Zero Trust security principles by implementing private 
 
 **Step 1:** The user accesses the application through the internet.
 
-**Step 2: **The Application Load Balancer securely distributes user traffic to the application.
+**Step 2:** The Application Load Balancer securely distributes user traffic to the application.
 
 **Step 3:** Amazon API Gateway manages and protects incoming application requests.
 
 **Step 4:** AWS Fargate runs the application automatically without requiring physical servers.
 
-**Step 5: **Amazon VPC provides a secure and private network environment for the application.
+**Step 5:** Amazon VPC provides a secure and private network environment for the application.
 
 **Step 6:** Amazon S3 securely stores files, documents, and application content.
 
