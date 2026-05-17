@@ -14,9 +14,51 @@ The architecture follows Zero Trust security principles by implementing private 
 
 ---
 
+## Architecture Explanation
+
+### Step 1
+The user accesses the application through the internet.
+
+### Step 2
+The Application Load Balancer securely distributes user traffic to the application.
+
+### Step 3
+Amazon API Gateway manages and protects incoming application requests.
+
+### Step 4
+AWS Fargate runs the application automatically without requiring physical servers.
+
+### Step 5
+Amazon VPC provides a secure and private network environment for the application.
+
+### Step 6
+Amazon S3 securely stores files, documents, and application content.
+
+### Step 7
+Amazon DynamoDB stores and manages application data at scale.
+
+### Step 8
+Amazon CloudWatch monitors application performance and system activity.
+
+### Step 9
+AWS CloudTrail tracks account and system actions for auditing and security visibility.
+
+### Step 10
+AWS Security Hub centralizes and reviews security alerts across the environment.
+
+### Step 11
+Amazon GuardDuty continuously detects suspicious activity and potential threats.
+
+### Step 12
+AWS KMS encrypts sensitive data to protect information and support security compliance.
+
+---
+
 ## Secure Application Website
 
 ![Secure Website](images/Secure_Website.png)
+
+The application is securely accessible over HTTPS using AWS Certificate Manager (ACM) with a valid TLS certificate. This ensures encrypted communication between users and the application while protecting sensitive data in transit.
 
 ---
 
@@ -59,17 +101,31 @@ The architecture follows Zero Trust security principles by implementing private 
 
 ![AWS WAF Logs](images/AWS%20WAF%20BLOCK%20Logs.png)
 
+AWS WAF Block Logs show that AWS WAF successfully detected and blocked suspicious or malicious web traffic before it reached the application. The logs provide visibility into blocked requests, matched security rules, source information, and threat activity for monitoring and security analysis.
+
+---
+
 ### Security Hub Finding — CVE-2026-33845
 
 ![CVE-2026-33845](images/CVE-2026-33845.png)
+
+AWS Security Hub detected the CVE-2026-33845 vulnerability during container image scanning. The finding provides visibility into potential security risks and helps identify vulnerabilities that require remediation to improve the overall security posture.
+
+---
 
 ### Security Hub Finding — CVE-2026-42010
 
 ![CVE-2026-42010](images/CVE-2026-42010.png)
 
+AWS Security Hub detected the CVE-2026-42010 vulnerability during container image scanning. The finding highlights potential security exposure and helps support vulnerability management, remediation, and continuous security monitoring across the AWS environment.
+
+---
+
 ### Remediation Success
 
 ![Remediation Success](images/Remediation%20Success.png)
+
+The remediation process successfully resolved the identified container vulnerabilities by rebuilding and redeploying the Docker image using a secure and updated base image. This demonstrates continuous vulnerability management and improved security posture within the AWS environment.
 
 ---
 
