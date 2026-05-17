@@ -16,41 +16,29 @@ The architecture follows Zero Trust security principles by implementing private 
 
 ## Architecture Explanation
 
-### Step 1
-The user accesses the application through the internet.
+**Step 1:** The user accesses the application through the internet.
 
-### Step 2
-The Application Load Balancer securely distributes user traffic to the application.
+**Step 2: **The Application Load Balancer securely distributes user traffic to the application.
 
-### Step 3
-Amazon API Gateway manages and protects incoming application requests.
+**Step 3:** Amazon API Gateway manages and protects incoming application requests.
 
-### Step 4
-AWS Fargate runs the application automatically without requiring physical servers.
+**Step 4:** AWS Fargate runs the application automatically without requiring physical servers.
 
-### Step 5
-Amazon VPC provides a secure and private network environment for the application.
+**Step 5: **Amazon VPC provides a secure and private network environment for the application.
 
-### Step 6
-Amazon S3 securely stores files, documents, and application content.
+**Step 6:** Amazon S3 securely stores files, documents, and application content.
 
-### Step 7
-Amazon DynamoDB stores and manages application data at scale.
+**Step 7:** Amazon DynamoDB stores and manages application data at scale.
 
-### Step 8
-Amazon CloudWatch monitors application performance and system activity.
+**Step 8:** Amazon CloudWatch monitors application performance and system activity.
 
-### Step 9
-AWS CloudTrail tracks account and system actions for auditing and security visibility.
+**Step 9:** AWS CloudTrail tracks account and system actions for auditing and security visibility.
 
-### Step 10
-AWS Security Hub centralizes and reviews security alerts across the environment.
+**Step 10:** AWS Security Hub centralizes and reviews security alerts across the environment.
 
-### Step 11
-Amazon GuardDuty continuously detects suspicious activity and potential threats.
+**Step 11:** Amazon GuardDuty continuously detects suspicious activity and potential threats.
 
-### Step 12
-AWS KMS encrypts sensitive data to protect information and support security compliance.
+**Step 12:** AWS KMS encrypts sensitive data to protect information and support security compliance.
 
 ---
 
