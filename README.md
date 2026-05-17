@@ -14,6 +14,12 @@ The architecture follows Zero Trust security principles by implementing private 
 
 ---
 
+## Secure Application Website
+
+![Secure Website](images/Secure_Website.png)
+
+---
+
 ## AWS Services
 
 - Amazon VPC
@@ -93,3 +99,36 @@ architecture.md
 deployment-guide.md
 security-controls.md
 lessons-learned.md
+```
+
+---
+
+## Deployment
+
+See:
+
+- deployment-guide.md
+- architecture.md
+- security-controls.md
+
+---
+
+## Lessons Learned
+
+- Built an enterprise-style AWS Zero Trust Architecture
+- Secured workloads using private networking
+- Configured HTTPS with ACM
+- Implemented AWS WAF protection
+- Monitored threats using GuardDuty and Security Hub
+- Improved Docker container security
+- Used AWS logging and monitoring services for auditing and visibility
+
+---
+
+## Author
+
+James Banday
+
+GitHub: https://github.com/jbanday808
+
+LinkedIn: https://www.linkedin.com/in/james-allen-morta-banday-62a391128/
