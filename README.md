@@ -169,6 +169,23 @@ See:
 
 ---
 
+## References
+
+- AWS Management Console: https://aws.amazon.com/console/
+- ALB: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html
+- Amazon API Gateway: https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
+- Amazon VPC: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+- AWS Fargate: https://aws.amazon.com/fargate/
+- Amazon S3: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
+- DynamoDB: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/dynamodb.html
+- Amazon CloudWatch: https://aws.amazon.com/cloudwatch/
+- Amazon GuardDuty: https://aws.amazon.com/guardduty/
+- AWS Security Hub: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html
+- AWS CloudTrail: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html
+- AWS KMS: https://docs.aws.amazon.com/kms/latest/developerguide/overview.html
+
+---
+
 ## Author
 
 James Banday
@@ -176,3 +193,5 @@ James Banday
 GitHub: https://github.com/jbanday808
 
 LinkedIn: https://www.linkedin.com/in/james-allen-morta-banday-62a391128/
+
+---
