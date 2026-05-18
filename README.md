@@ -109,6 +109,14 @@ The architecture follows Zero Trust security principles by implementing private 
 
 ---
 
+### Critical Security Hub Findings
+
+![Critical Security Hub Findings](images/Critical_Vulnerabilities.png)
+
+**Note:** AWS Security Hub identified critical container image vulnerabilities in Amazon ECR. This finding demonstrates centralized vulnerability visibility, risk prioritization, and the need for remediation through secure container image updates.
+
+---
+
 ### Remediation Success
 
 ![Remediation Success](images/Remediation%20Success.png)
